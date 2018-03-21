@@ -28,9 +28,7 @@
     </plugin>
     <plugin name="cordova-plugin-dialogs" spec="https://github.com/apache/cordova-plugin-dialogs/" />
     <plugin name="cordova-plugin-inappbrowser" spec="^2.0.2" />
-    <gap:config-file mode="add" parent="/manifest" platform="android">
-        <uses-permission android:name="android.permission.CAMERA" />
-    </gap:config-file>
+    
     <engine name="browser" spec="^5.0.3" />
     <engine name="android" spec="^7.0.0" />
 </widget>
