@@ -74,7 +74,7 @@
         <script type="text/javascript" src="js/jquery.js"></script>
 		<script type="text/javascript" src="js/jquery-mobile.js"></script>
 		<script type="text/javascript" src="cordova.js"></script>
-		<script type="text/javascript" src="../plugins/phonegap-plugin-barcodescanner/www/barcodescanner.js"></script>
+		<!-- <script type="text/javascript" src="../plugins/phonegap-plugin-barcodescanner/www/barcodescanner.js"></script> -->
         <!--<script type="text/javascript" src="js/index.js"></script>-->
 		
 		<script type="text/javascript">
@@ -91,7 +91,8 @@
 				// no callbacks required as this opens a popup which returns async
 				cordova.plugins.barcodeScanner.requestCameraPermission();
 			}
-			cordova.plugins.barcodeScanner.requestCameraPermission();
+			
+			//cordova.plugins.barcodeScanner.requestCameraPermission();
 			
 			cordova.plugins.barcodeScanner.scan(
 			  function (result) {
