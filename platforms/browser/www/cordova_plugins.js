@@ -44,6 +44,20 @@ module.exports = [
         "id": "cordova-plugin-inappbrowser.InAppBrowserProxy",
         "pluginId": "cordova-plugin-inappbrowser",
         "runs": true
+    },
+    {
+        "file": "plugins/cordova-plugin-qrscanner/www/www.min.js",
+        "id": "cordova-plugin-qrscanner.QRScanner",
+        "pluginId": "cordova-plugin-qrscanner",
+        "clobbers": [
+            "QRScanner"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-qrscanner/src/browser/plugin.min.js",
+        "id": "cordova-plugin-qrscanner.QRScannerProxy",
+        "pluginId": "cordova-plugin-qrscanner",
+        "runs": true
     }
 ];
 module.exports.metadata = 
@@ -52,7 +66,8 @@ module.exports.metadata =
     "cordova-plugin-whitelist": "1.3.3",
     "phonegap-plugin-barcodescanner": "7.1.0",
     "cordova-plugin-dialogs": "2.0.2-dev",
-    "cordova-plugin-inappbrowser": "2.0.2"
+    "cordova-plugin-inappbrowser": "2.0.2",
+    "cordova-plugin-qrscanner": "2.5.0"
 }
 // BOTTOM OF METADATA
 });
